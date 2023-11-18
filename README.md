@@ -1,8 +1,12 @@
 # Homolog-Identify
 
-#### homolog_identify.sh 
+### homolog_identify.sh 
+#### Pre-requisites: <br>
+Set up a new conda environment and install blast using the following commands-
+conda create -n myenv <br>
+conda install -c bioconda blast <br>
 
-Functionality of the script: <br>
+#### Functionality of the script: <br>
 
 (a) Given a protein sequence query, performs a blast search against a nucleotide subject. In other words, finds putative homologs of query amino acid sequences in FASTA format <br>
 (b) Filter hits to keep only hits with >30% sequence identity and >90% match length (90% of the query sequence length) <br>
