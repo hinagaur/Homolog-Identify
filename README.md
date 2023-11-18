@@ -16,4 +16,4 @@ conda install -c bioconda blast <br>
 
 #### Usage of your script should be: <br>
 
-homolog_identify.sh <query.faa> <subject.fna> <bedfile> <outfile> <br>
+homolog_identify.sh <query.faa> <subject.fna> <bedfile> <outfile> 
