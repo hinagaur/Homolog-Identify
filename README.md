@@ -10,6 +10,6 @@ Functionality of the script: <br>
     within the boundaries of the gene) <br>
 (d) Write an output file containing the unique gene names which your script identified as containing predicted HK domains. <br>
 
-Usage of your script should be: <br>
+#### Usage of your script should be: <br>
 
 homolog_identify.sh <query.faa> <subject.fna> <bedfile> <outfile> <br>
