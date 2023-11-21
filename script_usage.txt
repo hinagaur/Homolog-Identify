@@ -1,0 +1,2 @@
+for bed_file in test/*.bed; do if [[ -f "$bed_file" ]]; then base_name="${bed_file%.bed}";  fna_file="$base_name.fna";      if [[ -f "$fna_file" ]]; then   output="$base_name.txt";   ./homolog_identify.sh HK_domain.faa "$fna_file" "$bed_file" "$output";   fi;   fi; done
+
