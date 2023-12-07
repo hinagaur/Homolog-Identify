@@ -10,7 +10,7 @@ Sequence similarity searching to identify homologous sequences is one of the fir
 
 ## Functionality of the script: <br>
 
-(a) Given a protein sequence query, performs a blast search against a nucleotide subject. In other words, finds putative homologs of query amino acid sequences in FASTA format <br>
+(a) Given a protein sequence query, performs a blast search against a nucleotide subject. In other words, finds putative homologs of query amino acid sequences in FASTA format <br> <br>
 (b) Filter hits to keep only hits with >30% sequence identity and >90% match length (90% of the query sequence length) <br>
 (c) Uses Bash loop to identify which genes in a BED file contain the identified homologous domains. (if a gene contains a domain, then the location of the domain will be entirely <br>
     within the boundaries of the gene) <br>
