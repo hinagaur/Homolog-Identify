@@ -1,6 +1,6 @@
 # Identifying Homologs
 
-## Performing a BLAST search against nucleotide subject using a protein sequence as the query.
+## Given a protein sequence query, performs a blast search against a nucleotide subject
 
 ## Introduction
 
@@ -32,20 +32,26 @@ conda activate myenv
 ```
 conda install -c bioconda blast
 ```
-• Clone this repository or download zip
+• Clone this repository or download zip.
+```
+https://github.com/hinagaur/Homolog-Identify.git
+```
+• To run the project (Usage of your script should be: homolog_identify.sh <query.faa> <subject.fna> <bedfile> <outfile>)
+```
+./homolog_identify.sh Data/HK_domain.faa Data/Wolbachia.fna Data/Wolbachia.bed Wolbachia.txt
+```
 
-#### Usage of your script should be: <br>
-
-<img width="452" alt="image" src="https://github.com/hinagaur/Homolog-Identify/assets/66309991/47dc7fd9-8cd4-4ba5-8951-5958db47e450">
-
-#### Usage of your script for multiple genomes and their associated bed files: <br>
-
-Refer to the "script_usage.txt" and data for the code and dummy data. <br>
-
-
-<img width="452" alt="image" src="https://github.com/hinagaur/Homolog-Identify/assets/66309991/0d194420-9bdb-4da5-abc3-4b7db5f784d5">
-
-
-
-
-
+• For usage of the script for multiple genomes and their associated bed files, refer to the "script_usage.txt" and data for the code and dummy data, respectively. <br>
+```
+for bed_file in Data/*.bed; do
+    if [[ -f "$bed_file" ]]; then
+        base_name="${bed_file%.bed}"
+        fna_file="$base_name.fna"
+        
+        if [[ -f "$fna_file" ]]; then
+            output="$base_name.txt"
+            ./homolog_identify.sh Data/HK_domain.faa "$fna_file" "$bed_file" "$output"
+        fi
+    fi
+done
+```
