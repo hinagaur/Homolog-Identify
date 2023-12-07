@@ -20,7 +20,10 @@ Sequence similarity searching to identify homologous sequences is one of the fir
 ## Setup: <br>
 
 * Set up a new conda environment and install Blast in that using the following commands- <br>
-``` conda create -n myenv ```
+
+```
+conda create -n myenv
+ ```
 * conda install -c bioconda blast <br>
 #### Usage of your script should be: <br>
 
