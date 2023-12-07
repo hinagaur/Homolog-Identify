@@ -1,4 +1,4 @@
-# Identifying homologs
+# Identifying Homologs
 
 ## Performing a BLAST search against nucleotide subject using a protein sequence as the query.
 
@@ -19,12 +19,21 @@ Sequence similarity searching to identify homologous sequences is one of the fir
 
 ## Setup: <br>
 
-* Set up a new conda environment and install Blast in that using the following commands- <br>
+• Creare a new conda environment
 
 ```
 conda create -n myenv
  ```
-* conda install -c bioconda blast <br>
+• Activate the new conda environment
+```
+conda activate myenv
+ ```
+• Install blast in the new environment
+```
+conda install -c bioconda blast
+```
+• Clone this repository or download zip
+
 #### Usage of your script should be: <br>
 
 <img width="452" alt="image" src="https://github.com/hinagaur/Homolog-Identify/assets/66309991/47dc7fd9-8cd4-4ba5-8951-5958db47e450">
